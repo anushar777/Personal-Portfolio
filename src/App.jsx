@@ -44,8 +44,8 @@ function App() {
               of what's possible with technology.
             </p>
             <div className="hero-buttons">
-              <a href="#projects" className="btn btn-primary">View My Work</a>
-              <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+              <a href="#projects" className="btn btn-primary">Projects</a>
+              <a href="#contact" className="btn btn-secondary">Contact</a>
             </div>
           </div>
           <div className="hero-image">
