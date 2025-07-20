@@ -43,10 +43,6 @@ function App() {
               of hardware and software to create innovative solutions that push the boundaries 
               of what's possible with technology.
             </p>
-            <div className="hero-buttons">
-              <a href="#projects" className="btn btn-primary">Projects</a>
-              <a href="#contact" className="btn btn-secondary">Contact</a>
-            </div>
           </div>
         </div>
       </section>
