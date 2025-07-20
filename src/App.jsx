@@ -32,7 +32,7 @@ function App() {
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Your Name</span>
+              <span className="highlight">Anusha Ratra</span>
             </h1>
             <h2 className="hero-subtitle">
               Computer Engineering Student
@@ -46,11 +46,6 @@ function App() {
             <div className="hero-buttons">
               <a href="#projects" className="btn btn-primary">Projects</a>
               <a href="#contact" className="btn btn-secondary">Contact</a>
-            </div>
-          </div>
-          <div className="hero-image">
-            <div className="profile-placeholder">
-              <span>👨‍💻</span>
             </div>
           </div>
         </div>
