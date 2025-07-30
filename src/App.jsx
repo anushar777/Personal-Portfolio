@@ -204,7 +204,7 @@ ${formData.message}
             <div className="project-card">
               <div className="project-image">
                   <a
-                    href="https://github.com/your-username/your-repository-name"
+                    href="https://github.com/anushar777/Dance-Star"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="project-icon dance-icon"
