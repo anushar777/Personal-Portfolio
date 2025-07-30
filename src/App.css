@@ -413,10 +413,13 @@ body {
 
 .project-image {
   height: 200px;
-  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  width: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  border-radius: 12px;
 }
 
 .project-icon {
@@ -425,27 +428,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  cursor: pointer;
 }
 
-.project-icon svg {
-  width: 80px;
-  height: 80px;
+.dance-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+  border-radius: 12px; 
 }
 
-.dance-icon svg {
-  animation: dance 2s ease-in-out infinite;
+.dance-icon:hover .dance-img {
+  transform: scale(1.05);
 }
 
-@keyframes dance {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-5px) rotate(2deg); }
-  75% { transform: translateY(-3px) rotate(-2deg); }
-}
-
-.game-icon svg {
-  animation: pulse 2s ease-in-out infinite;
-}
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }

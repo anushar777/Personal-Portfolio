@@ -203,17 +203,15 @@ ${formData.message}
           <div className="projects-grid animate-on-scroll" id="projects-grid">
             <div className="project-card">
               <div className="project-image">
-                <div className="project-icon dance-icon">
-                  <svg viewBox="0 0 100 100" fill="currentColor">
-                    <circle cx="50" cy="30" r="8" fill="white"/>
-                    <circle cx="35" cy="45" r="6" fill="white"/>
-                    <circle cx="65" cy="45" r="6" fill="white"/>
-                    <path d="M 30 60 Q 50 80 70 60" stroke="white" strokeWidth="3" fill="none"/>
-                    <path d="M 25 40 Q 50 60 75 40" stroke="white" strokeWidth="2" fill="none"/>
-                    <path d="M 20 50 Q 50 70 80 50" stroke="white" strokeWidth="2" fill="none"/>
-                  </svg>
+                  <a
+                    href="https://github.com/your-username/your-repository-name"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-icon dance-icon"
+                  >
+                    <img src="/AI Dance.png" alt="AI Dance Performance Evaluator" className="dance-img" />
+                  </a>
                 </div>
-              </div>
               <div className="project-content">
                 <h3>AI Dance Performance Evaluator</h3>
                 <p>Building a full-stack AI tool that scores user dance against reference choreography using 33+ facial/body keypoints per frame</p>
@@ -227,19 +225,15 @@ ${formData.message}
             </div>
             <div className="project-card">
               <div className="project-image">
-                <div className="project-icon game-icon">
-                  <svg viewBox="0 0 100 100" fill="currentColor">
-                    <rect x="20" y="20" width="60" height="60" rx="5" fill="white" opacity="0.9"/>
-                    <circle cx="35" cy="35" r="3" fill="#3498db"/>
-                    <circle cx="65" cy="35" r="3" fill="#3498db"/>
-                    <circle cx="35" cy="65" r="3" fill="#3498db"/>
-                    <circle cx="65" cy="65" r="3" fill="#3498db"/>
-                    <path d="M 45 50 L 55 50 M 50 45 L 50 55" stroke="#3498db" strokeWidth="2"/>
-                    <path d="M 15 30 L 25 30 M 15 40 L 25 40 M 15 50 L 25 50" stroke="white" strokeWidth="2"/>
-                    <path d="M 75 30 L 85 30 M 75 40 L 85 40 M 75 50 L 85 50" stroke="white" strokeWidth="2"/>
-                  </svg>
-                </div>
-              </div>
+                    <a
+                      href="https://github.com/your-username/your-repository-name"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-icon dance-icon"
+                    >
+                      <img src="/Asteroids Photo.png" alt="Hand Tracking Asteroids" className="dance-img" />
+                    </a>
+                  </div>
               <div className="project-content">
                 <h3>Gesture-Controlled Space Shooter Game</h3>
                 <p>Developing Asteroids-style game navigated via real-time hand tracking</p>
@@ -269,24 +263,29 @@ ${formData.message}
               </p>
               <div className="contact-layout">
                 <div className="contact-info-details">
-                  <div className ="contact-item">
-                    <i className="fas fa-envelope"></i>
-                    <span>anusha.ratra@gmail.com</span>
+                  <div className="contact-item">
+                    
+                      <i className="fas fa-envelope"></i>
+                      <span>anusha.ratra@gmail.com</span>
                   
-                  
-                    <i className="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-               
-                  
-                    <i className="fab fa-github"></i>
-                    <span>GitHub</span>
-                 
-                 
-                    <i className="fas fa-map-marker-alt"></i>
-                    <span>Princeton, NJ</span>
+
+                    <a href="https://www.linkedin.com/in/anusha-ratra-455865305/" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-linkedin"></i>
+                      <span>LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/anushar777" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-github"></i>
+                      <span>GitHub</span>
+                    </a>
+
+                    
+                      <i className="fas fa-map-marker-alt"></i>
+                      <span>Princeton, NJ</span>
+                   
                   </div>
                 </div>
-              </div>
+              </div>  
             </div>
           </div>
         </div>
