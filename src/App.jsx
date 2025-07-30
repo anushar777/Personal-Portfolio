@@ -283,7 +283,7 @@ ${formData.message}
                  
                  
                     <i className="fas fa-map-marker-alt"></i>
-                    <span>Rutgers University, NJ</span>
+                    <span>Princeton, NJ</span>
                   </div>
                 </div>
               </div>
