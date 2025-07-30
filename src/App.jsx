@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import profilePhoto from './assets/Photo Edited.jpg'
 
 function App() {
   return (
@@ -35,14 +36,17 @@ function App() {
               <span className="highlight">Anusha Ratra</span>
             </h1>
             <h2 className="hero-subtitle">
-              Computer Engineering Student
-            </h2>
-            <p className="hero-description">
-              I'm a Computer Engineering major at Rutgers University with a passion for 
-              Artificial Intelligence and Machine Learning. I love exploring the intersection 
-              of hardware and software to create innovative solutions that push the boundaries 
-              of what's possible with technology.
-            </p>
+               Computer Engineering Student
+             </h2>
+             <p className="hero-description">
+               I'm a Computer Engineering major at Rutgers University with a passion for 
+               Artificial Intelligence and Machine Learning. I love exploring the intersection 
+                of hardware and software to create innovative solutions that push the boundaries 
+                of what's possible with technology.
+              </p>
+          </div>
+          <div className="profile-photo">
+            <img src={profilePhoto} alt="Anusha Ratra" />
           </div>
         </div>
       </section>
