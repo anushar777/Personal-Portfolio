@@ -269,70 +269,22 @@ ${formData.message}
               </p>
               <div className="contact-layout">
                 <div className="contact-info-details">
-                  <div className="contact-item">
+                  <div className ="contact-item">
                     <i className="fas fa-envelope"></i>
                     <span>anusha.ratra@gmail.com</span>
-                  </div>
-                  <div className="contact-item">
+                  
+                  
                     <i className="fab fa-linkedin"></i>
                     <span>LinkedIn</span>
-                  </div>
-                  <div className="contact-item">
+               
+                  
                     <i className="fab fa-github"></i>
                     <span>GitHub</span>
-                  </div>
-                  <div className="contact-item">
+                 
+                 
                     <i className="fas fa-map-marker-alt"></i>
                     <span>Rutgers University, NJ</span>
                   </div>
-                </div>
-                
-                <div className="contact-form-container">
-                  <form className="contact-form" onSubmit={handleSubmit}>
-                    <div className="form-group">
-                      <input 
-                        type="text" 
-                        placeholder="Name" 
-                        value={formData.name}
-                        onChange={(e) => setFormData({...formData, name: e.target.value})}
-                        required
-                      />
-                    </div>
-                    <div className="form-group">
-                      <input 
-                        type="email" 
-                        placeholder="Email" 
-                        value={formData.email}
-                        onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        required
-                      />
-                    </div>
-                    <div className="form-group">
-                      <select 
-                        value={formData.inquiry}
-                        onChange={(e) => setFormData({...formData, inquiry: e.target.value})}
-                        required
-                      >
-                        <option value="">General inquiries</option>
-                        <option value="job">Job Opportunity</option>
-                        <option value="collaboration">Collaboration</option>
-                        <option value="project">Project Discussion</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div className="form-group">
-                      <textarea 
-                        placeholder="Message" 
-                        value={formData.message}
-                        onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        required
-                      ></textarea>
-                    </div>
-                    <button type="submit" className="submit-btn">
-                      <i className="fas fa-paper-plane"></i>
-                      Send
-                    </button>
-                  </form>
                 </div>
               </div>
             </div>
