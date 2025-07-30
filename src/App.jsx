@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import profilePhoto from './assets/Photo Edited.jpg'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
@@ -23,6 +29,15 @@ function App() {
             </li>
             <li className="nav-item">
               <a href="#contact" className="nav-link">Contact</a>
+            </li>
+            <li className="nav-item">
+              <button 
+                className="dark-mode-toggle" 
+                onClick={toggleDarkMode}
+                aria-label="Toggle dark mode"
+              >
+                {darkMode ? '☀️' : '🌙'}
+              </button>
             </li>
           </ul>
         </div>
