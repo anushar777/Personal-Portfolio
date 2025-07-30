@@ -757,11 +757,12 @@ body {
   color: #a0aec0;
 }
 
-.dark-mode .contact-item {
-  color: #e8eaed;
-}
+
 
 .dark-mode .contact-item i {
+  color: #60a5fa;
+}
+.dark-mode .contact-item a {
   color: #60a5fa;
 }
 

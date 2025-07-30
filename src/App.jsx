@@ -108,7 +108,7 @@ ${formData.message}
               <span className="highlight">Anusha Ratra</span>
             </h1>
             <h2 className="hero-subtitle animate-on-scroll" id="hero-subtitle">
-               Computer Engineering Student at Rutgers University
+               Computer Engineering
              </h2>
              <p className="hero-description animate-on-scroll" id="hero-description">
                I'm a Computer Engineering major at Rutgers University with a passion for 
