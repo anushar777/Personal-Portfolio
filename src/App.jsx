@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
-import profilePhoto from './assets/Photo Edited.jpg'
+import profilePhoto from './assets/Profile Photo.jpg'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -209,7 +209,7 @@ ${formData.message}
                     rel="noopener noreferrer"
                     className="project-icon dance-icon"
                   >
-                    <img src="/AI Dance.png" alt="AI Dance Performance Evaluator" className="dance-img" />
+                    <img src="./assets/AI Dance.png" alt="AI Dance Performance Evaluator" className="dance-img" />
                   </a>
                 </div>
               <div className="project-content">
@@ -231,7 +231,7 @@ ${formData.message}
                       rel="noopener noreferrer"
                       className="project-icon dance-icon"
                     >
-                      <img src="/Asteroids Photo.png" alt="Hand Tracking Asteroids" className="dance-img" />
+                      <img src="./assets/Asteroids Photo.png" alt="Hand Tracking Asteroids" className="dance-img" />
                     </a>
                   </div>
               <div className="project-content">
