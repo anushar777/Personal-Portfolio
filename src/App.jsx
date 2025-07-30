@@ -16,7 +16,7 @@ function App() {
         <div className="nav-container">
           <div className="nav-left">
             <div className="nav-logo">
-              <a href="#home">Portfolio</a>
+              <a href="#home">Anusha Ratra - Portfolio</a>
             </div>
             <button 
               className="dark-mode-toggle" 
@@ -51,7 +51,7 @@ function App() {
               <span className="highlight">Anusha Ratra</span>
             </h1>
             <h2 className="hero-subtitle">
-               Computer Engineering Student
+               Computer Engineering Student at Rutgers University
              </h2>
              <p className="hero-description">
                I'm a Computer Engineering major at Rutgers University with a passion for 
@@ -89,30 +89,50 @@ function App() {
               <h3>Skills & Technologies</h3>
               <div className="skills-grid">
                 <div className="skill-category">
-                  <h4>Programming</h4>
+                  <h4>Languages</h4>
                   <div className="skill-tags">
                     <span className="skill-tag">Python</span>
-                    <span className="skill-tag">C++</span>
                     <span className="skill-tag">Java</span>
                     <span className="skill-tag">JavaScript</span>
+                    <span className="skill-tag">C++</span>
+                    <span className="skill-tag">C#</span>
+                    <span className="skill-tag">SQL</span>
+                    <span className="skill-tag">MATLAB</span>
+                    <span className="skill-tag">HTML/CSS</span>
                   </div>
                 </div>
                 <div className="skill-category">
-                  <h4>AI/ML</h4>
+                  <h4>Frameworks/Libraries</h4>
                   <div className="skill-tags">
-                    <span className="skill-tag">TensorFlow</span>
-                    <span className="skill-tag">PyTorch</span>
-                    <span className="skill-tag">Scikit-learn</span>
+                    <span className="skill-tag">React</span>
+                    <span className="skill-tag">Node.js</span>
                     <span className="skill-tag">OpenCV</span>
+                    <span className="skill-tag">MediaPipe</span>
+                    <span className="skill-tag">Flutter</span>
+                    <span className="skill-tag">jQuery</span>
                   </div>
                 </div>
                 <div className="skill-category">
-                  <h4>Tools</h4>
+                  <h4>Tools/Platforms/Methodologies</h4>
                   <div className="skill-tags">
+                    <span className="skill-tag">Unity</span>
+                    <span className="skill-tag">Firebase</span>
                     <span className="skill-tag">Git</span>
-                    <span className="skill-tag">Docker</span>
-                    <span className="skill-tag">Linux</span>
                     <span className="skill-tag">Arduino</span>
+                    <span className="skill-tag">Unreal Engine</span>
+                    <span className="skill-tag">VS Code</span>
+                    <span className="skill-tag">LTSpice</span>
+                    <span className="skill-tag">Onshape</span>
+                    <span className="skill-tag">Agile</span>
+                    <span className="skill-tag">Scrum</span>
+                  </div>
+                </div>
+                <div className="skill-category">
+                  <h4>Certifications</h4>
+                  <div className="skill-tags">
+                    <span className="skill-tag">Data Analysis with Python (IBM)</span>
+                    <span className="skill-tag">Accenture Software Eng. Simulation</span>
+                    <span className="skill-tag">CPD Level 5 –App Dev (Ongoing)</span>
                   </div>
                 </div>
               </div>
@@ -193,11 +213,16 @@ function App() {
                 <a href="https://github.com/yourusername" className="contact-link">
                   🐙 GitHub
                 </a>
+                <a href="/path-to-your-resume.pdf" className="contact-link" download>
+                  📄 Download Resume
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
 
       {/* Footer */}
       <footer className="footer">
