@@ -502,7 +502,7 @@ body {
 
 .contact-info p {
   font-size: 1.1rem;
-  color: #6b7280;
+  color: #1d2433;
   margin-bottom: 2rem;
   line-height: 1.7;
 }
@@ -525,14 +525,23 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: #2c3e50;
+  color: #3498db;
   font-size: 1rem;
 }
-
 .contact-item i {
   width: 50px;
   color: #3498db;
   font-size: 1.1rem;
+}
+
+.contact-item a {
+  color: #3498db;
+  text-decoration: none;
+  gap: 2rem;
+}
+
+.contact-item a:hover {
+  color: #1C2835;
 }
 
 
