@@ -46,6 +46,12 @@ body {
   align-items: center;
 }
 
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-logo a {
   font-size: 1.5rem;
   font-weight: 700;
@@ -100,6 +106,9 @@ body {
   border-radius: 50%;
   transition: all 0.3s ease;
   color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dark-mode-toggle:hover {

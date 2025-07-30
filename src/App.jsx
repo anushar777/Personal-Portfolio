@@ -14,8 +14,17 @@ function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-          <div className="nav-logo">
-            <a href="#home">Portfolio</a>
+          <div className="nav-left">
+            <div className="nav-logo">
+              <a href="#home">Portfolio</a>
+            </div>
+            <button 
+              className="dark-mode-toggle" 
+              onClick={toggleDarkMode}
+              aria-label="Toggle dark mode"
+            >
+              {darkMode ? '☀️' : '🌙'}
+            </button>
           </div>
           <ul className="nav-menu">
             <li className="nav-item">
@@ -29,15 +38,6 @@ function App() {
             </li>
             <li className="nav-item">
               <a href="#contact" className="nav-link">Contact</a>
-            </li>
-            <li className="nav-item">
-              <button 
-                className="dark-mode-toggle" 
-                onClick={toggleDarkMode}
-                aria-label="Toggle dark mode"
-              >
-                {darkMode ? '☀️' : '🌙'}
-              </button>
             </li>
           </ul>
         </div>
