@@ -5,6 +5,12 @@ import profilePhoto from './assets/Photo Edited.jpg'
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [animatedElements, setAnimatedElements] = useState(new Set());
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    inquiry: '',
+    message: ''
+  });
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -32,6 +38,33 @@ function App() {
 
     return () => observer.disconnect();
   }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Create email content
+    const subject = `Portfolio Contact: ${formData.inquiry || 'General Inquiry'}`;
+    const body = `
+Name: ${formData.name}
+Email: ${formData.email}
+Inquiry Type: ${formData.inquiry || 'General Inquiry'}
+
+Message:
+${formData.message}
+    `;
+    
+    // Open email client with pre-filled content
+    const mailtoLink = `mailto:anusha.ratra@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailtoLink);
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      inquiry: '',
+      message: ''
+    });
+  };
 
   return (
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
@@ -170,43 +203,52 @@ function App() {
           <div className="projects-grid animate-on-scroll" id="projects-grid">
             <div className="project-card">
               <div className="project-image">
-                <div className="project-placeholder">🤖</div>
-              </div>
-              <div className="project-content">
-                <h3>AI/ML Project</h3>
-                <p>Description of your AI/ML project will go here.</p>
-                <div className="project-tags">
-                  <span className="project-tag">Python</span>
-                  <span className="project-tag">TensorFlow</span>
-                  <span className="project-tag">Machine Learning</span>
+                <div className="project-icon dance-icon">
+                  <svg viewBox="0 0 100 100" fill="currentColor">
+                    <circle cx="50" cy="30" r="8" fill="white"/>
+                    <circle cx="35" cy="45" r="6" fill="white"/>
+                    <circle cx="65" cy="45" r="6" fill="white"/>
+                    <path d="M 30 60 Q 50 80 70 60" stroke="white" strokeWidth="3" fill="none"/>
+                    <path d="M 25 40 Q 50 60 75 40" stroke="white" strokeWidth="2" fill="none"/>
+                    <path d="M 20 50 Q 50 70 80 50" stroke="white" strokeWidth="2" fill="none"/>
+                  </svg>
                 </div>
               </div>
-            </div>
-            <div className="project-card">
-              <div className="project-image">
-                <div className="project-placeholder">💻</div>
-              </div>
               <div className="project-content">
-                <h3>Hardware Project</h3>
-                <p>Description of your hardware/embedded project will go here.</p>
-                <div className="project-tags">
-                  <span className="project-tag">C++</span>
-                  <span className="project-tag">Arduino</span>
-                  <span className="project-tag">Embedded Systems</span>
-                </div>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="project-image">
-                <div className="project-placeholder">🌐</div>
-              </div>
-              <div className="project-content">
-                <h3>Web Application</h3>
-                <p>Description of your web development project will go here.</p>
+                <h3>AI Dance Performance Evaluator</h3>
+                <p>Building a full-stack AI tool that scores user dance against reference choreography using 33+ facial/body keypoints per frame</p>
                 <div className="project-tags">
                   <span className="project-tag">React</span>
-                  <span className="project-tag">Node.js</span>
-                  <span className="project-tag">JavaScript</span>
+                  <span className="project-tag">Python</span>
+                  <span className="project-tag">OpenCV</span>
+                  <span className="project-tag">Mediapipe</span>
+                </div>
+              </div>
+            </div>
+            <div className="project-card">
+              <div className="project-image">
+                <div className="project-icon game-icon">
+                  <svg viewBox="0 0 100 100" fill="currentColor">
+                    <rect x="20" y="20" width="60" height="60" rx="5" fill="white" opacity="0.9"/>
+                    <circle cx="35" cy="35" r="3" fill="#3498db"/>
+                    <circle cx="65" cy="35" r="3" fill="#3498db"/>
+                    <circle cx="35" cy="65" r="3" fill="#3498db"/>
+                    <circle cx="65" cy="65" r="3" fill="#3498db"/>
+                    <path d="M 45 50 L 55 50 M 50 45 L 50 55" stroke="#3498db" strokeWidth="2"/>
+                    <path d="M 15 30 L 25 30 M 15 40 L 25 40 M 15 50 L 25 50" stroke="white" strokeWidth="2"/>
+                    <path d="M 75 30 L 85 30 M 75 40 L 85 40 M 75 50 L 85 50" stroke="white" strokeWidth="2"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3>Gesture-Controlled Space Shooter Game</h3>
+                <p>Developing Asteroids-style game navigated via real-time hand tracking</p>
+                <div className="project-tags">
+                  <span className="project-tag">Unity</span>
+                  <span className="project-tag">Python</span>
+                  <span className="project-tag">C#</span>
+                  <span className="project-tag">Mediapipe</span>
+                  <span className="project-tag">OpenCV</span>
                 </div>
               </div>
             </div>
@@ -223,21 +265,75 @@ function App() {
               <h3>Let's Connect!</h3>
               <p>
                 I'm always interested in new opportunities, collaborations, or just 
-                having a conversation about technology and AI/ML. Feel free to reach out!
+                having a conversation. Feel free to reach out!
               </p>
-              <div className="contact-links">
-                <a href="mailto:your.email@example.com" className="contact-link">
-                  <i className="fas fa-envelope"></i>
-                </a>
-                <a href="https://linkedin.com/in/yourprofile" className="contact-link">
-                  <i className="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/yourusername" className="contact-link">
-                  <i className="fab fa-github"></i>
-                </a>
-                <a href="/path-to-your-resume.pdf" className="contact-link" download>
-                  <i className="fas fa-file-alt"></i>
-                </a>
+              <div className="contact-layout">
+                <div className="contact-info-details">
+                  <div className="contact-item">
+                    <i className="fas fa-envelope"></i>
+                    <span>anusha.ratra@gmail.com</span>
+                  </div>
+                  <div className="contact-item">
+                    <i className="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </div>
+                  <div className="contact-item">
+                    <i className="fab fa-github"></i>
+                    <span>GitHub</span>
+                  </div>
+                  <div className="contact-item">
+                    <i className="fas fa-map-marker-alt"></i>
+                    <span>Rutgers University, NJ</span>
+                  </div>
+                </div>
+                
+                <div className="contact-form-container">
+                  <form className="contact-form" onSubmit={handleSubmit}>
+                    <div className="form-group">
+                      <input 
+                        type="text" 
+                        placeholder="Name" 
+                        value={formData.name}
+                        onChange={(e) => setFormData({...formData, name: e.target.value})}
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input 
+                        type="email" 
+                        placeholder="Email" 
+                        value={formData.email}
+                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <select 
+                        value={formData.inquiry}
+                        onChange={(e) => setFormData({...formData, inquiry: e.target.value})}
+                        required
+                      >
+                        <option value="">General inquiries</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="project">Project Discussion</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div className="form-group">
+                      <textarea 
+                        placeholder="Message" 
+                        value={formData.message}
+                        onChange={(e) => setFormData({...formData, message: e.target.value})}
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" className="submit-btn">
+                      <i className="fas fa-paper-plane"></i>
+                      Send
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
