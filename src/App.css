@@ -336,7 +336,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: 25% 34%; 
+  transform: scale(1.8);
 }
 
 .profile-placeholder {

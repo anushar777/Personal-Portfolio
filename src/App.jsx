@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
-import profilePhoto from './assets/Profile_Photo.jpg'
+import profilePhoto from './assets/Photo-Update.png'
 import AIDance from "./assets/AI_Dance.png"
 import Asteroids from './assets/Asteroids_Photo.png'
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
