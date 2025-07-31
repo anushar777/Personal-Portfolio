@@ -7,7 +7,7 @@
 
 ### 🌐 Portfolio  
 Check out my personal website for projects, resume, and contact:  
-**👉 [anusharatra.dev](https://anusharatra.dev)**  
+**👉 [anusharatra.dev](https://anushar777.github.io/Personal-Portfolio/)**  
 _Built with React, Vite, and JavaScript — optimized for speed, clarity, and personality._
 
 ---
@@ -36,7 +36,7 @@ My passion lies in building real-time, intelligent, and impactful tools — whet
 ---
 
 ### 📫 Let's Connect!
-- 🌐 Portfolio: [anusharatra.dev](https://anusharatra.dev)  
+- 🌐 Portfolio: [anusharatra.dev](https://anushar777.github.io/Personal-Portfolio/)  
 - 💼 LinkedIn: [linkedin.com/in/anusha-ratra-455865305](https://linkedin.com/in/anusha-ratra-455865305)  
 - 💻 GitHub: [github.com/anushar777](https://github.com/anushar777)  
 - 📧 Email: anusha.ratra@gmail.com  
