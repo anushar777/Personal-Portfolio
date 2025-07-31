@@ -150,14 +150,8 @@ ${formData.message}
               <span className="highlight">Anusha Ratra</span>
             </h1>
             <h2 className="hero-subtitle animate-on-scroll" id="hero-subtitle">
-               Computer Engineering
+               Computer Engineering major at Rutgers University 
              </h2>
-             <p className="hero-description animate-on-scroll" id="hero-description">
-               I'm a Computer Engineering major at Rutgers University with a passion for 
-               Artificial Intelligence and Machine Learning. I love exploring the intersection 
-                of hardware and software to create innovative solutions that push the boundaries 
-                of what's possible with technology.
-              </p>
           </div>
           <div className="profile-photo animate-on-scroll" id="profile-photo">
             <img src={profilePhoto} alt="Anusha Ratra" />
@@ -171,16 +165,12 @@ ${formData.message}
           <h2 className="section-title animate-on-scroll" id="about-title">About Me</h2>
           <div className="about-text animate-on-scroll" id="about-text">
             <p>
-              As a Computer Engineering student at Rutgers University, I'm deeply interested 
-              in the rapidly evolving field of AI/ML. My academic journey has equipped me 
-              with a strong foundation in both hardware and software engineering, allowing 
-              me to approach problems from multiple perspectives.
-            </p>
-            <p>
-              I'm particularly fascinated by machine learning algorithms, neural networks, 
-              and their applications in real-world scenarios. Whether it's developing 
-              intelligent systems or optimizing hardware for AI workloads, I'm always 
-              eager to learn and contribute to cutting-edge technology.
+            I’m passionate about the intersection of computer vision and AI.
+            My recent work includes building a full-stack choreography 
+            analysis tool using MediaPipe and OpenCV that grades dance performance by comparing 
+            pose and timing against reference videos. I love building things that help me tap into 
+            both my creative and problem solving sides, and I'm always eager to grow and learn new skills. 
+             
             </p>
           </div>
           <div className="skills animate-on-scroll" id="skills">
