@@ -190,6 +190,84 @@ body {
   transform: scale(1.1);
 }
 
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  gap: 4px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #2c3e50;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.active:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid #e1e5e9;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-menu {
+  list-style: none;
+  padding: 2rem 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-nav-link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -574,16 +652,17 @@ body {
     font-size: 1.25rem;
   }
   
-
-  
   .projects-grid {
     grid-template-columns: 1fr;
   }
   
-
-  
+  /* Show mobile menu toggle and hide desktop menu */
   .nav-menu {
     display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
   }
   
   .contact-layout {
@@ -661,6 +740,25 @@ body {
 }
 
 .dark-mode .dark-mode-toggle:hover {
+  background: rgba(96, 165, 250, 0.1);
+}
+
+/* Dark Mode Mobile Menu */
+.dark-mode .hamburger {
+  background-color: #e8eaed;
+}
+
+.dark-mode .mobile-menu {
+  background: rgba(15, 20, 25, 0.98);
+  border-top: 1px solid #2d3748;
+}
+
+.dark-mode .mobile-nav-link {
+  color: #e8eaed;
+}
+
+.dark-mode .mobile-nav-link:hover {
+  color: #60a5fa;
   background: rgba(96, 165, 250, 0.1);
 }
 

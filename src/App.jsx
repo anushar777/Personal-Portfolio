@@ -5,6 +5,7 @@ import AIDance from "./assets/AI_Dance.png"
 import Asteroids from './assets/Asteroids_Photo.png'
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [animatedElements, setAnimatedElements] = useState(new Set());
   const [formData, setFormData] = useState({
     name: '',
@@ -15,6 +16,14 @@ function App() {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
   };
 
   // Intersection Observer for scroll animations
@@ -74,7 +83,7 @@ ${formData.message}
         <div className="nav-container">
           <div className="nav-left">
             <div className="nav-logo">
-              <a href="#home">Anusha Ratra - Portfolio</a>
+              <a href="#home" onClick={closeMobileMenu}>Anusha Ratra - Portfolio</a>
             </div>
             <button 
               className="dark-mode-toggle" 
@@ -84,6 +93,8 @@ ${formData.message}
               {darkMode ? '☀️' : '🌙'}
             </button>
           </div>
+          
+          {/* Desktop Menu */}
           <ul className="nav-menu">
             <li className="nav-item">
               <a href="#home" className="nav-link">Home</a>
@@ -96,6 +107,35 @@ ${formData.message}
             </li>
             <li className="nav-item">
               <a href="#contact" className="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="mobile-menu-toggle"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+            <span className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}></span>
+            <span className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}></span>
+            <span className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}></span>
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className={`mobile-menu ${mobileMenuOpen ? 'active' : ''}`}>
+          <ul className="mobile-nav-menu">
+            <li className="mobile-nav-item">
+              <a href="#home" className="mobile-nav-link" onClick={closeMobileMenu}>Home</a>
+            </li>
+            <li className="mobile-nav-item">
+              <a href="#about" className="mobile-nav-link" onClick={closeMobileMenu}>About</a>
+            </li>
+            <li className="mobile-nav-item">
+              <a href="#projects" className="mobile-nav-link" onClick={closeMobileMenu}>Projects</a>
+            </li>
+            <li className="mobile-nav-item">
+              <a href="#contact" className="mobile-nav-link" onClick={closeMobileMenu}>Contact</a>
             </li>
           </ul>
         </div>
@@ -202,17 +242,15 @@ ${formData.message}
         <div className="container">
           <h2 className="section-title animate-on-scroll" id="projects-title">Projects</h2>
           <div className="projects-grid animate-on-scroll" id="projects-grid">
-            <div className="project-card">
+            <a
+              href="https://github.com/anushar777/Dance-Star"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card project-link"
+            >
               <div className="project-image">
-                  <a
-                    href="https://github.com/anushar777/Dance-Star"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-icon dance-icon"
-                  >
-                    <img src={AIDance} alt="AI Dance Performance Evaluator" className="dance-img" />
-                  </a>
-                </div>
+                <img src={AIDance} alt="AI Dance Performance Evaluator" className="dance-img" />
+              </div>
               <div className="project-content">
                 <h3>AI Dance Performance Evaluator</h3>
                 <p>Building a full-stack AI tool that scores user dance against reference choreography using 33+ facial/body keypoints per frame</p>
@@ -223,18 +261,16 @@ ${formData.message}
                   <span className="project-tag">Mediapipe</span>
                 </div>
               </div>
-            </div>
-            <div className="project-card">
+            </a>
+            <a
+              href="https://github.com/your-username/your-repository-name"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card project-link"
+            >
               <div className="project-image">
-                    <a
-                      href="https://github.com/your-username/your-repository-name"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-icon dance-icon"
-                    >
-                      <img src={Asteroids} alt="Hand Tracking Asteroids" className="dance-img" />
-                    </a>
-                  </div>
+                <img src={Asteroids} alt="Hand Tracking Asteroids" className="dance-img" />
+              </div>
               <div className="project-content">
                 <h3>Gesture-Controlled Space Shooter Game</h3>
                 <p>Developing Asteroids-style game navigated via real-time hand tracking</p>
@@ -246,7 +282,7 @@ ${formData.message}
                   <span className="project-tag">OpenCV</span>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
