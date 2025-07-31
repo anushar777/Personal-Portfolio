@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Anusha Ratra
 
 🚀 Aspiring Software Engineer | 💡 Creative Technologist | 🎓 ECE + CS @ Rutgers (GPA: 3.9)  
-🔍 Exploring AI/ML, Human-Centered Design, and Game Development
+🔍 Exploring AI/ML, Computer Vision, and Game Development
 
 ---
 
@@ -36,7 +36,7 @@ My passion lies in building real-time, intelligent, and impactful tools — whet
 ---
 
 ### 📫 Let's Connect!
-- 🌐 Portfolio: [anusharatra.dev](https://anushar777.github.io/Personal-Portfolio/)  
+- 🌐 Portfolio: [anushar777.github.io/Personal-Portfolio/](https://anushar777.github.io/Personal-Portfolio/)  
 - 💼 LinkedIn: [linkedin.com/in/anusha-ratra-455865305](https://linkedin.com/in/anusha-ratra-455865305)  
 - 💻 GitHub: [github.com/anushar777](https://github.com/anushar777)  
 - 📧 Email: anusha.ratra@gmail.com  
