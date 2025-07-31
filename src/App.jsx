@@ -254,7 +254,7 @@ ${formData.message}
               </div>
             </a>
             <a
-              href="https://github.com/your-username/your-repository-name"
+              href="https://github.com/anushar777/Hand-Tracking-Space-Shooters"
               target="_blank"
               rel="noopener noreferrer"
               className="project-card project-link"
